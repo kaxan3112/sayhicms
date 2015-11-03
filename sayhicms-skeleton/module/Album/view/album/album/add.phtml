@@ -1,0 +1,28 @@
+<?php
+$title = 'Add new album';
+$this->headTitle($title);
+?>
+<h1><?php echo $this->escapeHtml($title); ?></h1>
+<?php
+echo $this->bootstrapForm($form, 'horizontal');
+?>
+<!-- 
+<form method="POST" name="myform" class=" form-horizontal" id="myform">
+	<div class="control-group ">
+		<label class="control-label">Price label</label>
+		<div class="controls">
+			<div class="input-prepend input-append ">
+				<span class="add-on">$</span><input name="price" type="text"
+					required="required" placeholder="0.99" value=""><span
+					class="add-on">¢</span>
+			</div>
+			<p class="help-block">The price you wish to use</p>
+		</div>
+	</div>
+	<div class="form-actions">
+		<input name="actions[submit]" type="submit" class="btn btn-primary"
+			value="Save"><input name="actions[reset]" type="reset" class="btn"
+			value="reset">
+	</div>
+</form>
+ -->
