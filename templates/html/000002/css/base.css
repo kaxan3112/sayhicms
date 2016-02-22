@@ -1,0 +1,18 @@
+/**
+ * TEXT FORMAT
+ */
+body, input {
+  font-size: 12px;
+}
+a {
+  color:green;
+}
+
+
+/**
+ * ALTER BOOTSTRAP
+ */
+.form-control,
+.btn {
+  font-size: 12px;
+}
