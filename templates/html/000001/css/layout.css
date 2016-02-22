@@ -1,0 +1,138 @@
+/**
+ * HEADER
+*/
+header {
+  background: RGB(253,253,253);
+  padding:0px 0 10px 0;
+  -webkit-box-shadow: 0 8px 6px -6px lightgrey;
+  -moz-box-shadow: 0 8px 6px -6px lightgrey;
+  box-shadow: 0 8px 6px -6px lightgrey;
+}
+header .navbar {
+  min-height:auto;
+  margin-bottom:0;
+}
+header .navbar-default {
+  background:none;
+  border:none;
+}
+header .navbar-default .navbar-nav>.active>a,
+header .navbar-default .navbar-nav>.active>a:focus,
+header .navbar-default .navbar-nav>.active>a:hover,
+header .navbar-default .navbar-nav>li>a:focus,
+header .navbar-default .navbar-nav>li>a:hover {
+  background:none;
+  border-top:2px solid green;
+}
+.logo {
+  text-align: center;
+  margin-top: -45px;
+}
+.logo img {
+  height: 75px;
+}
+.hotline {
+}
+.hotline>div{
+  display:inline-block;
+  vertical-align:middle;
+}
+.hotline .icon {
+  font-size: 45px;
+  color: green;
+}
+.hotline .info {
+  margin: 0 auto;
+  padding: 5px 15px;
+  font-size: 18px;
+  color: RGB(203,0,0);
+}
+.hotline .info span {
+  color:green;
+  text-transform: uppercase;
+}
+
+
+/**
+ * MAIN CONTENT
+ */
+.main-wrapper {
+  margin:10px auto;
+}
+.sidebar-first {
+  margin-top: -10px;
+}
+.sidebar-first h5 {
+  color: green;
+  font-weight: bold;
+}
+.sidebar-menu {
+  background: RGB(203,0,0);
+  padding : 20px;
+}
+.sidebar-menu ul {
+  margin: 0;
+  padding:0;
+}
+.sidebar-menu ul li {
+  list-style: none;
+  padding : 15px 20px;
+  border-bottom: 1px solid pink;
+}
+.sidebar-menu ul li>a {
+  color: white;
+}
+.sidebar-menu ul li:hover {
+  cursor:pointer;
+  background:green;
+}
+.sidebar-menu ul li.search-wrapper {
+  padding:0;
+}
+.sidebar-menu ul li.search-wrapper:hover {
+  background: none;
+}
+.sidebar-menu ul li.search-wrapper input {
+  font-size:12px;
+}
+.member-login form{
+  border: 1px solid lightgrey;
+  padding: 20px;
+  text-align:center;
+}
+.member-info {
+  margin-top: 20px;
+  border: 1px solid lightgrey;
+  padding: 20px;
+  text-align:center;
+}
+.member-info img {
+  max-width: 100%;
+}
+.news,
+.annoucements {
+  margin-bottom: 40px;
+}
+
+/**
+ * FOOTER
+ */
+#partners-slider .item{
+  margin: 3px;
+}
+#partners-slider .item img{
+  display: block;
+  width: auto;
+  height: auto;
+}
+footer .contact {
+  background: RGB(253,253,253);
+  padding:20px 0;
+  margin-top:40px;
+  -webkit-box-shadow: 0 8px 6px 8px lightgrey;
+  -moz-box-shadow: 0 8px 6px 8px lightgrey;
+  box-shadow: 0 8px 6px 8px lightgrey;
+}
+footer .contact h4 { color: RGB(203,0,0) }
+footer .contact i,
+footer .contact strong { color: green }
