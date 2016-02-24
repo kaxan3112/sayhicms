@@ -1,138 +1,212 @@
 /**
  * HEADER
 */
-header {
-  background: RGB(253,253,253);
-  padding:0px 0 10px 0;
-  -webkit-box-shadow: 0 8px 6px -6px lightgrey;
-  -moz-box-shadow: 0 8px 6px -6px lightgrey;
-  box-shadow: 0 8px 6px -6px lightgrey;
+.nav-main {
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  border-bottom: 2px solid black;
+  z-index: 99;
 }
-header .navbar {
-  min-height:auto;
-  margin-bottom:0;
+.nav-main .logo {
+  padding: 16px 0;
 }
-header .navbar-default {
-  background:none;
-  border:none;
+.nav-main .logo img {
+  height: 28px;
 }
-header .navbar-default .navbar-nav>.active>a,
-header .navbar-default .navbar-nav>.active>a:focus,
-header .navbar-default .navbar-nav>.active>a:hover,
-header .navbar-default .navbar-nav>li>a:focus,
-header .navbar-default .navbar-nav>li>a:hover {
-  background:none;
-  border-top:2px solid green;
+/* MOBILE */
+.nav-main-mobile {
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  border-bottom: 2px solid black;
+  z-index: 99;
 }
-.logo {
+.nav-main-mobile .logo {
   text-align: center;
-  margin-top: -45px;
+  padding: 10px 0;
 }
-.logo img {
-  height: 75px;
+.nav-main-mobile .logo img {
+  height: 20px;
 }
-.hotline {
-}
-.hotline>div{
-  display:inline-block;
-  vertical-align:middle;
-}
-.hotline .icon {
-  font-size: 45px;
-  color: green;
-}
-.hotline .info {
-  margin: 0 auto;
-  padding: 5px 15px;
+#menu-toggle {
   font-size: 18px;
-  color: RGB(203,0,0);
+  line-height: 40px;
+  cursor: pointer;
 }
-.hotline .info span {
-  color:green;
-  text-transform: uppercase;
-}
-
 
 /**
  * MAIN CONTENT
  */
 .main-wrapper {
-  margin:10px auto;
+  margin-top: 60px;
 }
-.sidebar-first {
-  margin-top: -10px;
-}
-.sidebar-first h5 {
-  color: green;
-  font-weight: bold;
-}
-.sidebar-menu {
-  background: RGB(203,0,0);
-  padding : 20px;
-}
-.sidebar-menu ul {
-  margin: 0;
-  padding:0;
-}
-.sidebar-menu ul li {
-  list-style: none;
-  padding : 15px 20px;
-  border-bottom: 1px solid pink;
-}
-.sidebar-menu ul li>a {
-  color: white;
-}
-.sidebar-menu ul li:hover {
-  cursor:pointer;
-  background:green;
-}
-.sidebar-menu ul li.search-wrapper {
-  padding:0;
-}
-.sidebar-menu ul li.search-wrapper:hover {
-  background: none;
-}
-.sidebar-menu ul li.search-wrapper input {
-  font-size:12px;
-}
-.member-login form{
-  border: 1px solid lightgrey;
-  padding: 20px;
-  text-align:center;
-}
-.member-info {
-  margin-top: 20px;
-  border: 1px solid lightgrey;
-  padding: 20px;
-  text-align:center;
-}
-.member-info img {
-  max-width: 100%;
-}
-.news,
-.annoucements {
-  margin-bottom: 40px;
+@media screen and (max-width: 768px) {
+  .main-wrapper {
+    margin-top: 40px;
+  }
 }
 
 /**
  * FOOTER
  */
-#partners-slider .item{
-  margin: 3px;
+footer {
+  margin-top: 5%;
+  border-top: 2px solid black;
+  padding-top: 45px;
+  text-align: center;
+ }
+.newsletter-wrapper h5{
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
 }
-#partners-slider .item img{
-  display: block;
+.newsletter-form input[type="email"] {
+  border: none;
+  box-shadow: none;
+  width: 300px;
+  font-size: 14px;
+}
+.newsletter-form .form-group{
+  border-bottom: 1px solid black;
+}
+.copyright {
+  margin-top: 20px;
+  color: grey;
+  font-size: 11px;
+}
+.copyright a {
+  margin-left: 10px;
+  color: grey;
+}
+
+/**
+ * NAVIGATION
+ */
+/* MAIN - level 1 */
+.nav-main .menu {
+  transition: none;
+  padding: 0;
+  height: 60px;
+  text-align: center;
+}
+.nav-main .menu>ul {
+  display: inline-block;
+  height: 100%;
   width: auto;
-  height: auto;
+  padding: 0;
+  cursor: default;
 }
-footer .contact {
-  background: RGB(253,253,253);
-  padding:20px 0;
-  margin-top:40px;
-  -webkit-box-shadow: 0 8px 6px 8px lightgrey;
-  -moz-box-shadow: 0 8px 6px 8px lightgrey;
-  box-shadow: 0 8px 6px 8px lightgrey;
+.nav-main .menu>ul>li {
+  list-style: none;
+  float: left;
+  height: 100%;
+  padding: 20px 20px 0;
 }
-footer .contact h4 { color: RGB(203,0,0) }
-footer .contact i,
-footer .contact strong { color: green }
+.nav-main .menu>ul>li>a {
+  padding: 0;
+  padding-top: 22px;
+  letter-spacing: 0;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: none;
+}
+/* MAIN - level 2 */
+.nav-main .menu-content {
+  display: none;
+  position: fixed;
+  top:58px;
+  right: 0;
+  left: 0;
+  background: RGBA(255,255,255,0.95);
+  padding: 50px 0;
+  text-align: left;
+  border-bottom: 2px solid black;
+  -webkit-transition: opacity .25s ease,visibility .25s ease;
+  transition: opacity .25s ease,visibility .25s ease;
+}
+.nav-main .menu>ul>li:hover .menu-content {
+  display: block;
+}
+.nav-main .menu-content ul {
+  margin-bottom: 10px;
+  padding: 0;
+}
+.nav-main .menu-content ul li {
+  list-style: none;
+  padding: 2px 0;
+}
+.nav-main .menu-content ul li.title a {
+  font-weight: bold;
+}
+.nav-main .menu-content ul li.promotion a {
+  color: red;
+}
+/* MAIN - TOOLS */
+.nav-main .tools {
+  text-align: right;
+}
+.nav-main .tools a {
+  text-decoration: none;
+}
+.nav-main .tools>ul {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+.nav-main .tools>ul>li {
+  list-style: none;
+  display: inline-block;
+  height: 100%;
+  padding: 20px 0px 0;
+  position: relative;
+}
+.nav-main .tools>ul>li:after {
+    content: "";
+    position: relative;
+    top: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    height: 15px;
+    width: 1px;
+    border-left: 1px solid #d7d7d8;
+}
+.nav-main .tools>ul>li>ul{
+  display: none;
+  position: absolute;
+  background: RGBA(255,255,255,1);
+  right: 10px;
+  padding: 10px 5px;
+  width: 100px;
+}
+.nav-main .tools>ul>li>ul>li{
+  list-style: none;
+  text-align: right;
+  padding: 5px;
+}
+.nav-main .tools>ul>li:hover>ul {
+  display: block;
+}
+/* NAV-FOOTER */
+.nav-footer ul,
+.nav-social ul{
+  margin: 30px 0;
+  padding: 0;
+}
+.nav-footer ul li,
+.nav-social ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 16px;
+}
+.nav-footer ul li a,
+.nav-social ul li a {
+  font-weight: bold;
+}

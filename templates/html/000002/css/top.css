@@ -1,60 +1,71 @@
-.main-slider-wrapper {
-  margin-top: -15px;
+/**
+ * SLIDESHOW
+ */
+#main-slider {
+  z-index: 0;
 }
-#main-slider .owl-item div{
-  padding:5px;
+#main-slider .owl-item img {
+  width: 100%;
 }
 #main-slider .owl-item .caption {
   position:absolute;
-  background: RGBA(0,0,0,0.5);
   color:white;
-  font-size:25px;
-  padding: 10px 30px 10px 10px;
-  bottom:20%;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 100%;
+}
+#main-slider .owl-item .caption .date{
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+#main-slider .owl-item .caption .title {
+  margin-top: 2%;
+  color: #ffffff;
+  display: block;
+  font-size: 70px;
+  line-height: 65px;
 }
 #main-slider .owl-item img{
   display: block;
   vertical-align: middle;
   width: 100%;
   height: auto;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
 }
-
-.top-services .tab-content {
-  border: 1px solid lightgrey;
-  border-top:none;
-  padding: 20px 0;
-}
-.top-services .service {
+/* SLIDESHOW MOBILE */
+#main-slider-mobile .item {
   text-align: center;
+  position: relative;
 }
-.top-services .service img {
-  max-width: 100%;
+#main-slider-mobile .item img {
+  width: 100%;
 }
-.top-services .service h5 {
-  background: RGB(203,0,0);
-  color: white;
-  margin:0;
-  padding:10px;
+#main-slider-mobile .item .caption {
+  position:absolute;
+  color:white;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-align: center;
+  width: 100%;
 }
-.top-services .service-info {
-  margin-top:20px;
+#main-slider-mobile .item .caption .date{
+  color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
-.top-services .service-info h5 {
-  font-weight:bold;
+#main-slider-mobile .item .caption .title {
+  margin-top: 5%;
+  color: #ffffff;
+  display: block;
+  font-size: 45px;
+  line-height: 45px;
 }
 
-.top-news {
-  margin-top:20px;
-}
-.top-news h5 {
-  font-weight:bold;
-}
-.top-news .item{
-  padding: 10px 0;
-  border-bottom: 1px solid lightgrey;
+
+/**
+ * FOOTER
+ */
+#top footer {
+  margin-top: 0;
 }

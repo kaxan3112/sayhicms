@@ -1,0 +1,105 @@
+/* Toggle Styles */
+body {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+body.toggled {
+  padding-left: 250px;
+}
+
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-box-shadow: inset -5px 0 10px -1px #f4f4f4;
+  box-shadow: inset -5px 0 10px -1px #f4f4f4;
+}
+
+body.toggled #sidebar-wrapper {
+  width: 250px;
+}
+
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px;
+}
+
+body.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: -250px;
+}
+
+
+@media(min-width:768px) {
+  body {
+    padding-left: 250px;
+  }
+
+  body.toggled {
+    padding-left: 0;
+  }
+
+  #sidebar-wrapper {
+    width: 250px;
+  }
+
+  body.toggled #sidebar-wrapper {
+    width: 0;
+  }
+
+  #page-content-wrapper {
+    padding: 20px;
+    position: relative;
+  }
+
+  body.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0;
+  }
+}
+
+/* MENU STYLES */
+#sidebar-wrapper .menu {
+  margin-top: 45px;
+}
+#sidebar-wrapper .menu ul {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+#sidebar-wrapper .menu>ul {
+  border-bottom: 1px solid lightgrey;
+}
+#sidebar-wrapper .menu ul li {
+  list-style: none;
+  margin: 20px 20px 20px 0;
+}
+#sidebar-wrapper .menu ul li a {
+  font-size: 14px;
+  color: RGB(80,80,80);
+}
+#sidebar-wrapper .menu ul li.title a {
+  color: black;
+}
+#sidebar-wrapper ul.tool {
+  border: none;
+}
+#sidebar-wrapper ul.tool li a {
+  color: RGB(112,112,112);
+}
+#sidebar-wrapper ul.tool li i {
+  width: 20px;
+  text-align: center;
+}

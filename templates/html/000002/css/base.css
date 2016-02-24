@@ -5,7 +5,10 @@ body, input {
   font-size: 12px;
 }
 a {
-  color:green;
+  color:black;
+}
+a:hover {
+  color: grey;
 }
 
 
