@@ -177,6 +177,9 @@ footer {
     width: 1px;
     border-left: 1px solid #d7d7d8;
 }
+.nav-main .tools>ul>li:last-child:after {
+  display: none;
+}
 .nav-main .tools>ul>li>ul{
   display: none;
   position: absolute;
