@@ -1,0 +1,36 @@
+/**
+ * HEADER
+*/
+header {
+  text-align: center;
+  font-weight: 100;
+}
+header .title {
+  font-size: 50px;
+  letter-spacing: 0.3em;
+}
+header a:hover {
+  text-decoration: none;
+}
+header .tagline {
+  font-size: 26px;
+  letter-spacing: 0.1em;
+  color: grey;
+}
+@media screen and (max-width: 768px) {
+  header .title,
+  header .tagline {
+    font-size: 20px;
+    letter-spacing: 0.3em;
+    display: inline-block;
+  }
+}
+
+/**
+ * MAIN CONTENT
+ */
+
+
+/**
+ * FOOTER
+ */

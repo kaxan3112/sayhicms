@@ -1,0 +1,21 @@
+/**
+ * TEXT FORMAT
+ */
+body, input {
+  font-size: 12px;
+}
+a {
+  color:RGB(0,191,255);
+}
+a:hover {
+  color: orange;
+}
+
+
+/**
+ * ALTER BOOTSTRAP
+ */
+.form-control,
+.btn {
+  font-size: 12px;
+}
