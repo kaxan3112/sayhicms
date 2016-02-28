@@ -57,7 +57,7 @@ header .navbar-default .navbar-nav>li>a:hover {
  * MAIN CONTENT
  */
 .main-wrapper {
-  margin:10px auto;
+  margin:0 auto;
 }
 .sidebar-first {
   margin-top: -10px;
@@ -66,9 +66,15 @@ header .navbar-default .navbar-nav>li>a:hover {
   color: green;
   font-weight: bold;
 }
+.sidebar-menu-wrapper {
+  position: relative;
+}
 .sidebar-menu {
+  position: absolute;
+  z-index: 999;
+  width: calc(100% - 30px);
   background: RGB(203,0,0);
-  padding : 20px;
+  padding : 15px;
 }
 .sidebar-menu ul {
   margin: 0;

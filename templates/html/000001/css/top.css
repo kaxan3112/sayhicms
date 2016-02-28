@@ -1,27 +1,11 @@
 .main-slider-wrapper {
-  margin-top: -15px;
-}
-#main-slider .owl-item div{
-  padding:5px;
-}
-#main-slider .owl-item .caption {
-  position:absolute;
-  background: RGBA(0,0,0,0.5);
-  color:white;
-  font-size:25px;
-  padding: 10px 30px 10px 10px;
-  bottom:20%;
+  
 }
 #main-slider .owl-item img{
   display: block;
   vertical-align: middle;
   width: 100%;
   height: auto;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
 }
 
 .top-services .tab-content {
