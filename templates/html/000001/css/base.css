@@ -2,7 +2,7 @@
  * TEXT FORMAT
  */
 body, input {
-  font-size: 12px;
+  font-size: 14px;
 }
 a {
   color:green;
@@ -14,5 +14,5 @@ a {
  */
 .form-control,
 .btn {
-  font-size: 12px;
+  font-size: 14px;
 }

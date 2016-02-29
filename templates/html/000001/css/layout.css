@@ -3,53 +3,103 @@
 */
 header {
   background: RGB(253,253,253);
-  padding:0px 0 10px 0;
   -webkit-box-shadow: 0 8px 6px -6px lightgrey;
   -moz-box-shadow: 0 8px 6px -6px lightgrey;
   box-shadow: 0 8px 6px -6px lightgrey;
+  border-top: 2px solid RGB(204,0,0);
+}
+header .navbar-brand,
+header #navbar {
+  height: 40px;
 }
 header .navbar {
-  min-height:auto;
+  min-height: auto;
   margin-bottom:0;
+  text-align: center;
+  z-index: 0;
 }
 header .navbar-default {
-  background:none;
-  border:none;
+  background: RGB(8,84,31);
+  border:none !important;
 }
+#navbar ul {
+  float: none;
+  display: inline-block;
+}
+header .navbar-default .navbar-nav>li>a,
 header .navbar-default .navbar-nav>.active>a,
 header .navbar-default .navbar-nav>.active>a:focus,
 header .navbar-default .navbar-nav>.active>a:hover,
 header .navbar-default .navbar-nav>li>a:focus,
 header .navbar-default .navbar-nav>li>a:hover {
   background:none;
-  border-top:2px solid green;
+  color: white;
+  padding: 10px;
+}
+header .info {
+  padding: 25px 15px;
+}
+form.search {
+  position: relative;
+}
+form.search .search-input {
+  text-indent: 10px;
+  padding-right: 30px;
+}
+form.search .input-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 15px;
 }
 .logo {
   text-align: center;
-  margin-top: -45px;
 }
-.logo img {
-  height: 75px;
+.logo .title {
+  float: left;
+  width: 80%;
 }
-.hotline {
-}
-.hotline>div{
-  display:inline-block;
-  vertical-align:middle;
-}
-.hotline .icon {
-  font-size: 45px;
-  color: green;
-}
-.hotline .info {
-  margin: 0 auto;
-  padding: 5px 15px;
+.logo .title h1 {
   font-size: 18px;
-  color: RGB(203,0,0);
+  line-height: 10px;
+  margin: 5px 0 0 0;
+  transform: translate(0%, 50%);
+  color: RGB(204,0,0);
+  font-weight: bold;
+  word-spacing: 7px;
 }
-.hotline .info span {
+.logo .title h1 span{
+  font-size: 10px;
+  line-height: 10px;
+  color: RGB(8,84,31);
+  word-spacing: 1px;
+}
+.logo .image {
+  float: left;
+  width: 20%;
+}
+.logo .image img {
+  height: 50px;
+  line-height: 50px;
+  float: right;
+}
+.hotline span{
+  display: block;
+  font-weight: bold;
+}
+.hotline .callcenter{
+  color: red;
+  font-size: 20px;
+}
+.hotline .callcenter .title{
   color:green;
-  text-transform: uppercase;
+  font-size: 14px;
+}
+.hotline .branch {
+  color: black;
+}
+.hotline .branch .title{
+  color:red;
 }
 
 
@@ -59,8 +109,8 @@ header .navbar-default .navbar-nav>li>a:hover {
 .main-wrapper {
   margin:0 auto;
 }
-.sidebar-first {
-  margin-top: -10px;
+.main-content-wrapper {
+  padding-top: 20px;
 }
 .sidebar-first h5 {
   color: green;
@@ -75,6 +125,7 @@ header .navbar-default .navbar-nav>li>a:hover {
   width: calc(100% - 30px);
   background: RGB(203,0,0);
   padding : 15px;
+  top: -20px;
 }
 .sidebar-menu ul {
   margin: 0;
@@ -101,10 +152,19 @@ header .navbar-default .navbar-nav>li>a:hover {
 .sidebar-menu ul li.search-wrapper input {
   font-size:12px;
 }
-.member-login form{
+.member-login form {
   border: 1px solid lightgrey;
   padding: 20px;
   text-align:center;
+  background: black;
+}
+.member-login form,
+.member-login form h5,
+.member-login form a {
+  color: white;
+}
+.member-login form button {
+  background: red;
 }
 .member-info {
   margin-top: 20px;
